@@ -40,9 +40,12 @@ public class Game {
 		}
 		
 		int winnings = matches * bet;
-
+		
+		System.out.println(winnings);
+		System.out.println(matches);
+		
 		if (matches > 0) {			
-			player.receiveWinnings(winnings);
+			player.receiveWinnings(winnings,bet);
 		}
         return winnings;		
 	}
